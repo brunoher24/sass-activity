@@ -8,4 +8,173 @@ h1 {
 }
 h1 span {
   color: #0000ff;
+}
+
+#circles-list li, .circle-grey, .circle-black, .circle-blue, .circle-green, .circle-red {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: white;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
+.circle-black {
+  background-color: black;
+}
+
+.circle-grey {
+  background-color: grey;
+}
+
+#circles-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#circles-list li {
+  background-color: red;
+}
+#circles-list li::after {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 1;
+  left: 1;
+  font-family: "Helvetica", sans-serif;
+}
+#circles-list li:nth-child(1) {
+  box-shadow: 1px 1px 1px grey;
+}
+#circles-list li:nth-child(1)::after {
+  content: "1";
+}
+#circles-list li:nth-child(2) {
+  box-shadow: 2px 2px 2px grey;
+}
+#circles-list li:nth-child(2)::after {
+  content: "2";
+}
+#circles-list li:nth-child(3) {
+  box-shadow: 3px 3px 3px grey;
+}
+#circles-list li:nth-child(3)::after {
+  content: "3";
+}
+#circles-list li:nth-child(4) {
+  box-shadow: 4px 4px 4px grey;
+}
+#circles-list li:nth-child(4)::after {
+  content: "4";
+}
+#circles-list li:nth-child(5) {
+  box-shadow: 5px 5px 5px grey;
+}
+#circles-list li:nth-child(5)::after {
+  content: "5";
+}
+#circles-list li:nth-child(6) {
+  box-shadow: 6px 6px 6px grey;
+}
+#circles-list li:nth-child(6)::after {
+  content: "6";
+}
+#circles-list li:nth-child(7) {
+  box-shadow: 7px 7px 7px grey;
+}
+#circles-list li:nth-child(7)::after {
+  content: "7";
+}
+#circles-list li:nth-child(8) {
+  box-shadow: 8px 8px 8px grey;
+}
+#circles-list li:nth-child(8)::after {
+  content: "8";
+}
+#circles-list li:nth-child(9) {
+  box-shadow: 9px 9px 9px grey;
+}
+#circles-list li:nth-child(9)::after {
+  content: "9";
+}
+#circles-list li:nth-child(10) {
+  box-shadow: 10px 10px 10px grey;
+}
+#circles-list li:nth-child(10)::after {
+  content: "10";
+}
+#circles-list li:nth-child(11) {
+  box-shadow: 11px 11px 11px grey;
+}
+#circles-list li:nth-child(11)::after {
+  content: "11";
+}
+#circles-list li:nth-child(12) {
+  box-shadow: 12px 12px 12px grey;
+}
+#circles-list li:nth-child(12)::after {
+  content: "12";
+}
+#circles-list li:nth-child(13) {
+  box-shadow: 13px 13px 13px grey;
+}
+#circles-list li:nth-child(13)::after {
+  content: "13";
+}
+#circles-list li:nth-child(14) {
+  box-shadow: 14px 14px 14px grey;
+}
+#circles-list li:nth-child(14)::after {
+  content: "14";
+}
+#circles-list li:nth-child(15) {
+  box-shadow: 15px 15px 15px grey;
+}
+#circles-list li:nth-child(15)::after {
+  content: "15";
+}
+#circles-list li:nth-child(16) {
+  box-shadow: 16px 16px 16px grey;
+}
+#circles-list li:nth-child(16)::after {
+  content: "16";
+}
+#circles-list li:nth-child(17) {
+  box-shadow: 17px 17px 17px grey;
+}
+#circles-list li:nth-child(17)::after {
+  content: "17";
+}
+#circles-list li:nth-child(18) {
+  box-shadow: 18px 18px 18px grey;
+}
+#circles-list li:nth-child(18)::after {
+  content: "18";
+}
+#circles-list li:nth-child(19) {
+  box-shadow: 19px 19px 19px grey;
+}
+#circles-list li:nth-child(19)::after {
+  content: "19";
+}
+#circles-list li:nth-child(20) {
+  box-shadow: 20px 20px 20px grey;
+}
+#circles-list li:nth-child(20)::after {
+  content: "20";
 }/*# sourceMappingURL=index.css.map */

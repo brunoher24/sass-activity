@@ -1,4 +1,5 @@
 @import 'common';
+// @import 'mixins';
 // La police de caractère pour la balise h1 doit être 
     // Helvetica, sans-serif (stocker cette valeur dans une variable)
     // La couleur du texte dans la balsie h1 doit être : #ff0000
@@ -14,5 +15,74 @@ h1 {
     color: $red;
     span {
         color: $blue
+    }
+}
+
+%circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+}
+
+
+.circle-red {
+    @extend %circle;
+    background-color: red;
+}
+
+.circle-green {
+    @extend %circle;
+    background-color: green;
+
+}
+
+.circle-blue {
+    @extend %circle;
+    background-color: blue;
+
+}
+
+.circle-black {
+    @extend %circle;
+    background-color: black;
+
+}
+
+.circle-grey {
+    @extend %circle;
+    background-color: grey;
+}
+
+#circles-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        @extend %circle;
+        background-color: red;
+        &::after {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            top: 1;
+            left: 1;
+            font-family: $helvetica;
+        }
+    }
+    li {
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+                box-shadow: #{$i}px #{$i}px #{$i}px grey;
+                &::after {
+                    content: '#{$i}';
+                }
+            } 
+        }
     }
 }
